@@ -4,14 +4,16 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import UsernameForm from "./UsernameForm"
 import SignupForm from './SignUpForm'
+import BetterSignupForm from './bettersignup'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <BetterSignupForm />
       {/* <UsernameForm /> */}
-      <SignupForm />
+      {/* <SignupForm /> */}
     </>
   )
 }
