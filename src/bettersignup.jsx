@@ -9,8 +9,10 @@ function BetterSignupForm() {
         const changefield = evt.target.name;
         const newValue = evt.target.value;
         setFormData((currdata) => {
-            currdata[changefield] = newValue
-            return { ...currdata }
+            return {
+                ...currdata,
+                [changefield]: newValue
+            }
         })
     }
 
