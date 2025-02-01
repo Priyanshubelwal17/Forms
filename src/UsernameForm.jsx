@@ -8,6 +8,7 @@ function UsernameForm() {
     }
     return (
         <div>
+            <label htmlFor="">Enter a username</label>
             <input
                 onChange={updateusername}
                 type="text"
