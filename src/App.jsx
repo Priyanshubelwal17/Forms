@@ -6,13 +6,15 @@ import UsernameForm from "./UsernameForm"
 import SignupForm from './SignUpForm'
 import BetterSignupForm from './bettersignup'
 import ShoppingListForm from './ShoppingListForm'
+import ShoppingList from './ShoppingList'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <ShoppingListForm />
+      <ShoppingList />
+
       {/* <BetterSignupForm /> */}
       {/* <UsernameForm /> */}
       {/* <SignupForm /> */}
