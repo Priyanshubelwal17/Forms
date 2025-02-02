@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { v4 as uuid } from "uuid"
-import ShoppingListForm from "./ShoppingListForm";
+
+import ValidateShoppingListForm from "./validatedShoppingListForm";
 function ShoppingList() {
     const [items, setitems] = useState([
         { id: uuid(), product: "pine", quantity: 8 },
         { id: uuid(), product: "lime", quantity: 30 }
     ])
+
     const additems = (item) => {
         setitems((curritems) => {
             return [...curritems, { ...item, id: uuid() }]
@@ -21,7 +23,7 @@ function ShoppingList() {
                     </li>
                 ))}
             </ul>
-            <ShoppingListForm additems={additems} />
+            <ValidateShoppingListForm additems={additems} />
         </div>
     )
 }
