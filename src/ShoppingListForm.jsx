@@ -14,6 +14,7 @@ function ShoppingListForm({ additems }) {
         e.preventDefault()
         console.log("Adgads")
         additems(formData)
+        setFormData({ product: "", quantity: 0 })
     }
     return (
         <form action="" onSubmit={handleSubmit}>
