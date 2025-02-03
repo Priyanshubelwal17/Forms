@@ -7,6 +7,7 @@ import SignupForm from './SignUpForm'
 import BetterSignupForm from './bettersignup'
 import ShoppingListForm from './ShoppingListForm'
 import ShoppingList from './ShoppingList'
+import FormDemo from './FormDemo'
 
 
 function App() {
@@ -14,8 +15,8 @@ function App() {
 
   return (
     <>
-
-      <ShoppingList />
+      <FormDemo />
+      {/* <ShoppingList /> */}
 
       {/* <BetterSignupForm /> */}
       {/* <UsernameForm /> */}
